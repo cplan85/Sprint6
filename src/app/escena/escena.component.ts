@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EscenaComponent implements OnInit {
 
+  currentSentence ="";
+
   @Input() public parentData: string[] = [""];
   constructor() { }
 
