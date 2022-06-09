@@ -1,2 +1,12 @@
-<p>home works!</p>
-<app-escena [parentData] ="parentData"></app-escena>
+<div class="escena-container" *ngIf="beginJourney; else startScreen"><app-escena [parentData] ="parentData"></app-escena></div>
+
+<ng-template #startScreen>
+    <div>
+      <p>Feu clic al botó per començar el viatge amb el nostre astronauta aventurer</p>
+      <button
+      type="button" 
+      class="btn btn-light btn-lg border border-dark w-50 p-4"
+      (click)="start()"
+      >Comença!</button>
+    </div>
+  </ng-template>

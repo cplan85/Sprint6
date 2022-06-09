@@ -1,9 +1,18 @@
-<p class="bg-warning">"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"</p>
-<div class="d-flex flex-row mb-4">
-    <button type="button" class="btn btn-light btn-lg border border-dark w-50 p-4">Anterior</button>
-    <button type="button" class="btn btn-light btn-lg border border-dark w-50">Següent</button>
+<div id="escena-body" class="pt-4" [style.backgroundImage]="parentData[currentSentence].img">
+    <div class="d-flex flex-row mb-4 mt p-2 mx-4">
+        <button
+         type="button"
+         class="btn btn-light btn-lg border border-dark w-50 p-4"
+         (click)="prev()"
+         >Anterior</button>
+        <button
+        type="button"
+        class="btn btn-light btn-lg border border-dark w-50"
+        (click)="next()"
+        >Següent</button>
+    </div>
+    
+    <ul class="list-group m-4" *ngFor="let storyOption of parentData; let i=index">
+       <li class="p-3 mb-4 mx-2 bg" [style.backgroundColor]="currentSentence === i ? '#ffc0cb' : 'rgb(255, 255, 255, 0.50)'"  >{{storyOption.txt}}</li>
+    </ul>
 </div>
-
-<ul class="list-group" *ngFor="let storyOption of parentData; let i=index">
-   <li class="p-3 mb-4">{{storyOption}}</li> 
-</ul>

@@ -1,19 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HistoryItem } from '../interfaces';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
- 
-  @Input() public parentData: string[] = [""];
+  beginJourney = false;
 
-  constructor() { }
+  @Input() public parentData: HistoryItem[] = [{ txt: '', img: '' }];
 
-  ngOnInit(): void {
+  constructor() {}
 
+  ngOnInit(): void {}
 
+  start() {
+    this.beginJourney = true;
   }
-
 }
