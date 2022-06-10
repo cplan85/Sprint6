@@ -27,5 +27,5 @@ export class AppComponent {
   ];
 
   // use ng g c <appname> to create new app. Use optional -s -t flags to remove styling or template.
-  title = 'Sprint 6 App';
+  public title = 'Sprint 6';
 }

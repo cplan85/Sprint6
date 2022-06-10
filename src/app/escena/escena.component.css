@@ -10,6 +10,7 @@ app-escena {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    transition: background 1s;
 }
 
 ul {

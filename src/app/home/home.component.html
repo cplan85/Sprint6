@@ -1,12 +1,15 @@
-<div class="escena-container" *ngIf="beginJourney; else startScreen"><app-escena [parentData] ="parentData"></app-escena></div>
+<div *ngIf="beginJourney; else startScreen"><app-escena [parentData] ="parentData"></app-escena></div>
 
 <ng-template #startScreen>
-    <div>
-      <p>Feu clic al botó per començar el viatge amb el nostre astronauta aventurer</p>
+    <div id="home-container" class=" text-light p-4">
+      <h1>{{title}}</h1>
+      <p class="fw-light">Per Carlos Planchart - IT Academy - Cibernàrium.</p>
+      <p class="fs-5">Feu clic al botó per començar el viatge amb el nostre heroi valent.</p>
       <button
       type="button" 
       class="btn btn-light btn-lg border border-dark w-50 p-4"
       (click)="start()"
       >Comença!</button>
+      <p class="fs-6 pt-4"><a href='https://www.freepik.com/vectors/cartoon-space' >Cartoon space vector created by vectorpouch - www.freepik.com</a></p>
     </div>
   </ng-template>

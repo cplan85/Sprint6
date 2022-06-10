@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   beginJourney = false;
 
   @Input() public parentData: HistoryItem[] = [{ txt: '', img: '' }];
+  @Input() title = '';
 
   constructor() {}
 
