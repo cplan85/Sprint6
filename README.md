@@ -1,5 +1,5 @@
 # Sprint-6App
-![Sprint 6 Cover Image](./Sprint6-1.PNG "Sprint 6 Cover")
+![Sprint 6 Cover Image](Sprint6-1.PNG "Sprint 6 Cover")
 
 In this simple project, the user is allowed to progress through a story with dynamic background changes.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
