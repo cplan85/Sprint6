@@ -2,6 +2,8 @@
 
 ![Sprint 6 Cover Image](./src/assets/Sprint6-1.png)
 
+<a href="https://cp-sprint6.netlify.app/">View Demo</a>
+
 In this simple project, the user is allowed to progress through a story with dynamic background changes.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
